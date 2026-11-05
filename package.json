@@ -1,0 +1,48 @@
+{
+  "name": "@local/dsh-rtl-bidi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Right-to-left text support for the DeepSeek Harness Web UI (Persian, Arabic, Hebrew).",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farzin-CS/dsh-rtl-bidi.git"
+  },
+  "homepage": "https://github.com/Farzin-CS/dsh-rtl-bidi#readme",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "rtl",
+    "bidi",
+    "persian",
+    "farsi",
+    "arabic",
+    "hebrew"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

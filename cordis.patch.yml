@@ -1,0 +1,5 @@
+# Inserted after every bundle layer. The row activates the bundle; the real
+# work happens in the browser half (client.js).
+- insert:
+    - id: rtl-bidi
+      name: '@local/dsh-rtl-bidi'

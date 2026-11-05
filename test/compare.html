@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>RTL before / after</title>
+<style>
+  body { margin: 0; padding: 16px; background: #eceef1;
+         font: 13px/1.4 "Segoe UI", system-ui, sans-serif; color: #0f1115;
+         display: flex; gap: 16px; align-items: flex-start; }
+  figure { margin: 0; }
+  figcaption { font: 600 13px/1.6 "Segoe UI", sans-serif; padding: 2px 0 8px; color: #3a3f45; }
+  iframe { display: block; width: 620px; height: 1580px; border: 1px solid #cfd3d8; background: #fff; }
+</style>
+</head>
+<body>
+  <figure>
+    <figcaption>BEFORE — no plugin</figcaption>
+    <iframe src="./fixture.html" title="before"></iframe>
+  </figure>
+  <figure>
+    <figcaption>AFTER — @local/dsh-rtl-bidi</figcaption>
+    <iframe src="./fixture.html?plugin=1" title="after"></iframe>
+  </figure>
+</body>
+</html>

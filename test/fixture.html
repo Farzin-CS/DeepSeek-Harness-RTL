@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DSH RTL fixture</title>
+<style>
+  body { margin: 0; background: #fff; color: #0f1115;
+         font: 16px/1.7 "Segoe UI", system-ui, -apple-system, sans-serif; }
+  #root { width: 620px; padding: 20px 24px; box-sizing: border-box; }
+
+  /* ---- shipped transcript layout (subset) ---- */
+  [data-chat-flow] { display: flex; flex-direction: column; gap: 22px; }
+  [data-chat-flow-kind="user"], [data-chat-flow-kind="steering"] { display: flex; justify-content: flex-end; }
+  .bubble { background: #eef2ff; border-radius: 12px; padding: 10px 14px; max-width: 82%; }
+  .caption { font: 11px/1.4 ui-monospace, Consolas, monospace; color: #9aa0a6; margin-bottom: 4px; }
+
+  /* ---- shipped Markdown rules that matter here (copied shape) ---- */
+  ._markdown_1ypvv_5 { min-width: 0; overflow-wrap: anywhere; }
+  ._markdown_1ypvv_5 h1 { font-size: 24px; margin: 32px 0 16px; }
+  ._markdown_1ypvv_5 h2 { font-size: 19px; margin: 32px 0 16px; }
+  ._markdown_1ypvv_5 p { margin: 16px 0; }
+  ._markdown_1ypvv_5 :where(ul,ol) { margin: 16px 0; padding-left: 18px; }
+  ._markdown_1ypvv_5 li:not(:first-child) { margin-top: 6px; }
+  ._markdown_1ypvv_5 li::marker { color: #9aa0a6; }
+  ._markdown_1ypvv_5 :where(ul,ol) ol { list-style-position: inside; padding-left: 0; }
+  ._markdown_1ypvv_5 blockquote { border-left: 2px solid #c0c4cc; margin: 16px 0 0; padding-left: 14px; color: #4b5058; }
+  ._markdown_1ypvv_5 pre { margin: 16px 0; padding: 12px; background: #f4f5f7; border-radius: 8px;
+                           overflow: auto; font: 13px/1.6 ui-monospace, Consolas, monospace; }
+  ._markdown_1ypvv_5 :not(pre) > code { background: #f0f1f3; border: .5px solid #dcdfe3; border-radius: 4px;
+                                       padding: 0 5px; font: .875em/1.5 ui-monospace, Consolas, monospace; }
+  ._markdown_1ypvv_5 table { border-collapse: collapse; width: 100%; }
+  ._markdown_1ypvv_5 th { text-align: start; padding: 8px 10px; border-bottom: .5px solid #d5d8dc; font-weight: 600; }
+  ._markdown_1ypvv_5 td { padding: 8px 10px; border-bottom: .5px solid #e7e9ec; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div data-chat-flow>
+
+    <div data-chat-flow-kind="user">
+      <div class="bubble"><span>سلام! این پیام فارسی است و باید راست‌به‌چپ خوانده شود.</span></div>
+    </div>
+
+    <div data-chat-flow-kind="assistant-step">
+      <div class="_markdown_1ypvv_5">
+        <p>سلام! یک پیام کامل فارسی که باید از سمت راست شروع شود و انتهای هر خط هم سمت راست تراز باشد، حتی اگر در میان جمله واژه‌های انگلیسی مثل DeepSeek Harness یا نام فایل config.json بیاید.</p>
+
+        <p>This paragraph is plain English and must stay left-to-right, left aligned, exactly as before.</p>
+
+        <p>این خط با <code>useState</code> شروع نمی‌شود ولی چند شناسه دارد: <code>sessionStorage</code>، <code>dsh-client-ui-chat</code> و <code>pnpm install</code>.</p>
+
+        <h2>فهرست فارسی</h2>
+        <ul>
+          <li>نخستین آیتم فهرست فارسی که باید نشانگر آن سمت راست باشد.</li>
+          <li>دومین آیتم با یک واژهٔ انگلیسی: <strong>Markdown</strong> و سپس توضیح فارسی.</li>
+        </ul>
+
+        <h2>فهرست انگلیسی</h2>
+        <ul>
+          <li>First English bullet stays left, marker on the left.</li>
+          <li>Second English bullet with an inline <code>code</code> token.</li>
+        </ul>
+
+        <h2>فهرست با شروع انگلیسی</h2>
+        <ul>
+          <li><strong>useState</strong>: وضعیت کامپوننت را نگه می‌دارد و تغییر می‌دهد.</li>
+          <li><strong>useEffect</strong>: عوارض جانبی را پس از رندر اجرا می‌کند.</li>
+        </ul>
+
+        <blockquote>این یک نقل‌قول فارسی است و نوار آن باید سمت راست قرار بگیرد.</blockquote>
+
+        <p>قطعه‌کد زیر باید چپ‌به‌راست بماند:</p>
+        <pre><code>// این خط یک توضیح فارسی داخل کد است
+const greeting = "سلام دنیا";
+console.log(greeting);  // باید با "سلام" شروع شود</code></pre>
+
+        <table>
+          <thead><tr><th>کلید</th><th>توضیح</th></tr></thead>
+          <tbody>
+            <tr><td>مسیر</td><td>محل ذخیرهٔ فایل تنظیمات</td></tr>
+            <tr><td>نام</td><td>شناسهٔ نشست جاری</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div data-chat-flow-kind="assistant-step">
+      <div class="_markdown_1ypvv_5">
+        <p>یک پیام دوم، کوتاه‌تر، برای سنجش تراز پاراگراف‌های پیاپی.</p>
+        <ol>
+          <li>گام اول: نصب بستهٔ <code>@deepseek-ai/dsh</code>.</li>
+          <li>گام دوم: اجرای دستور <code>dsh web</code> و باز کردن نشانی.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  window.__ModuleLoader__ = { load(definition) { window.__rtlModule = definition; } };
+</script>
+<script>
+  if (new URLSearchParams(location.search).get('plugin') === '1') {
+    const script = document.createElement('script');
+    script.src = '../client.js';
+    script.onload = () => {
+      window.__rtlModule.factory().apply({ effect: (callback) => callback() });
+      document.title = 'after';
+    };
+    document.head.appendChild(script);
+  } else {
+    document.title = 'before';
+  }
+</script>
+</body>
+</html>
