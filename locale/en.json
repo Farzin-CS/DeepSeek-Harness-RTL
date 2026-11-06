@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Persian & RTL Text",
+    "title": "DeepSeek Harness RTL",
     "description": "Renders Persian, Arabic and Hebrew messages right-to-left with the correct direction per paragraph, so mixed English and Persian text keeps its order."
   }
 }

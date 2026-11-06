@@ -1,4 +1,4 @@
-# Persian & RTL Text for DeepSeek Harness
+# DeepSeek Harness RTL
 
 A [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) bundle that
 makes right-to-left content (Persian/Farsi, Arabic, Hebrew) render correctly in
@@ -54,7 +54,7 @@ github:Farzin-CS/DeepSeek-Harness-RTL
 or cloned at a pinned release:
 
 ```
-github:Farzin-CS/DeepSeek-Harness-RTL#v1.0.0
+github:Farzin-CS/DeepSeek-Harness-RTL#v1.0.1
 ```
 
 or clone it and install the directory path:
