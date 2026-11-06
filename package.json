@@ -7,9 +7,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Farzin-CS/dsh-rtl-bidi.git"
+    "url": "git+https://github.com/Farzin-CS/DeepSeek-Harness-RTL.git"
   },
-  "homepage": "https://github.com/Farzin-CS/dsh-rtl-bidi#readme",
+  "homepage": "https://github.com/Farzin-CS/DeepSeek-Harness-RTL#readme",
   "keywords": [
     "deepseek-harness",
     "dsh",

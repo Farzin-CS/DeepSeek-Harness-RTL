@@ -48,13 +48,19 @@ Install it into a Harness profile with the Plugin Manager, using the repository
 as the installation spec:
 
 ```
-github:Farzin-CS/dsh-rtl-bidi
+github:Farzin-CS/DeepSeek-Harness-RTL
+```
+
+or cloned at a pinned release:
+
+```
+github:Farzin-CS/DeepSeek-Harness-RTL#v1.0.0
 ```
 
 or clone it and install the directory path:
 
 ```bash
-git clone https://github.com/Farzin-CS/dsh-rtl-bidi.git
+git clone https://github.com/Farzin-CS/DeepSeek-Harness-RTL.git
 # then install the local directory as a bundle
 ```
 
